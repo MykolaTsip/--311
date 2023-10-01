@@ -1,0 +1,22 @@
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline;
+    margin: 30px;
+}
+
+ul li a {
+    color: white;
+    padding: 10px 40px;
+    background-color: darkblue;
+    border: 2px solid red;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
+div {
+    cursor:not-allowed;
+}

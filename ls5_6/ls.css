@@ -1,0 +1,25 @@
+
+.l {
+    /* list-style-image: url('https://www.ivystone.com/globalassets/product-images/large/grnbxnb89857.jpg'); */
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.nav_menu {
+    list-style-type: none;
+}
+
+.nav_menu li {
+    display: inline;
+    margin: 100px 20px;
+}
+
+.rr span {
+    display: list-item;
+    /* list-style-type: square; */
+}
+
+/* .rr {
+    list-style-type: square;
+} */
+
