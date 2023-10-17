@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        button {
+            background-color: red;
+        }
+
+
+        #name {
+            border-bottom: 2px solid red;
+            border-radius: 5px;
+        }
+
+        form {
+            width: 80%;
+            border: 2px solid red;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+
+        input[type="submit"] {
+            margin: 15px;
+        }
+    </style>
+ 
+ 
+    <button disabled>First button</button>
+    <input type="button" value="my Second button" disabled>
+    <input type="text">
+    <hr>
+
+    <input type="password" placeholder="dgkpedmfgp" required>
+    <hr>
+    <input type="text" placeholder="text" value="444" readonly>
+    <hr>
+    <input type="number" minlength="10" maxlength="13">
+    <hr>
+    <input type="search">
+    <hr>
+    <input type="image" src="../ls5_6/15-156766_small-cute-cat-png.png">
+    <hr>
+    <input type="color">
+    <hr>
+    <input type="date">
+    <hr>
+    <input type="email" pattern="">
+    <hr>
+    <input type="file">
+    <hr>
+    <input type="hidden">
+    <hr>
+    <input type="range">
+    <hr>
+    <input type="checkbox" id="milk"> <label for="milk"> Молоко </label>
+    <input type="checkbox" id="oil"> <label for="oil"> Олія </label> 
+    <input type="checkbox"> Цукерки
+    <hr>
+    <input type="radio" name="list" id="2"><label for="2">Присутній</label>
+    <input type="radio" name="list" id="1"><label for="1">Запізнився</label>
+    <input type="radio" name="list" id="0"><label for="0">Відсутній</label>
+    <input type="radio">  SNJLFNJJS
+    <hr>
+
+    <select name="sel" id="">
+        <option value="1">Від дорогих</option>
+        <option value="2">Від дешевих</option>
+        <option value="3" selected>Нові</option>
+        <option value="аа">Рейтинг</option>
+    </select>
+    <hr>
+
+    <!-- <input type="text" width="300" height="300"> -->
+    <textarea rows="30" cols="40" placeholder="4fff"></textarea>
+    <hr>
+
+
+    <form id="form">
+        Зареєструватися
+        <hr>
+
+        <label for="name"> Enter name</label>
+        <input type="text" placeholder="Name" id="name" name="name" >
+        <hr>
+
+        <label for="pass">Enter password</label>
+        <input type="password" placeholder="Password" id="pass" name="pass" >
+        <hr>
+
+        <label for="numb">Enter number</label>
+        <input type="number" placeholder="Number" id="numb" name="numb" minlength="10" maxlength="13">
+        <hr>
+
+        <!-- <label for="sex">Enter you sex</label> -->
+        <input type="radio" name="sex" id="man"><label for="man"> Man </label>
+        <input type="radio" name="sex" id="wooman"><label for="wooman"> Wooman </label>
+        <hr>
+
+        <input type="checkbox" id="xio" name="phone"><label for="xio"> Xiomi </label>
+        <input type="checkbox" id="sum" name="phone"><label for="sum">Samsung</label>
+        <input type="checkbox" id="iph" name="phone"><label for="iph">Iphon</label>
+        <hr>
+
+        <label for="birth">Day of your birthday</label>
+        <input type="date" id="birth" name="birth">
+        <hr>
+
+        <label for="des"></label>
+        <textarea name="des" id="des" cols="30" rows="10" placeholder="write smth about yourself"></textarea>
+        <hr>
+
+        <!-- <input type="button"> -->
+        <input type="submit" value="Send">
+    </form>
+
+    <script>
+        let a = document.getElementById('form');
+        console.log(a);
+    </script>
+</body>
+</html>
