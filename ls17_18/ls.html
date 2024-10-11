@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* ex 1 */
+        .fgr {
+            display: grid;
+            /* width: 400px; */
+            /* grid-template-columns: 400px 300px 200px;
+            grid-template-rows: 350px 150px; */
+
+            /* grid-template-columns: 1fr auto 100px;
+            grid-template-rows: auto auto; */
+
+            /* grid-template-columns: minmax(30px, 500px) 200px 200px;
+            grid-template-rows: 50px 50px; */
+
+            /* grid-template-columns: repeat(2, minmax(50px, 300px)) 1fr;
+            grid-template-rows: repeat(2, 50px); */
+
+            /* grid-template-columns: minmax(100px, fit-content(200px)) 200px 200px; */
+
+
+            grid-template-columns: .5fr .5fr;
+            grid-template-rows: 100px 100px 100px;
+
+            grid-auto-rows: 50px;
+            grid-auto-columns: 150px;
+
+            justify-items: center;
+            align-items: center;
+        }
+
+        .third {
+            justify-self: end;
+            align-self: end;
+        }
+
+        /* ex 2 */
+
+        .ar {
+            display: grid;
+            grid-template-areas: 'head head head'
+                                 'cont cont side'
+                                 'foot foot foot';
+        }
+
+        .header {
+            grid-area: head;
+            border: 2px solid yellow;
+            padding: 10px;
+        }
+
+        .content {
+            grid-area: cont;
+            border: 2px solid red;
+            padding: 10px;
+        }
+
+        .sidebar {
+            grid-area: side;
+            border: 2px solid blue;
+            padding: 10px;
+        }
+
+        .footer {
+            grid-area: foot;
+            border: 2px solid green;
+            padding: 10px;
+        }
+
+        /* ex 3 */
+
+        .lines {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 100px);   
+            /* grid-template: repeat(3, 1fr) / repeat(3, 100px); */
+        }
+
+        .fr {
+            grid-column-start: 1;
+            grid-column-end: 3;
+/* 
+            grid-row-start: 1;
+            grid-row-end: 3; */
+        }
+
+        .th {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            /* order: 2; */
+        }
+    </style>
+
+    <div class="fgr">
+        <div>
+            1
+            <!-- <img src="../ls5_6/15-156766_small-cute-cat-png.png"> -->
+        </div>
+        <div>
+            2
+            <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum impedit vero, ratione explicabo numquam quaerat necessitatibus deleniti quidem ad dolorem perferendis obcaecati nam maxime sint id facere error unde?
+            2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia fugit, ex harum debitis laborum at, vero cupiditate nihil sint rerum, sequi ullam neque quos eligendi quod exercitationem voluptate nulla. -->
+        </div>
+        <div class="third">
+            3
+        </div>
+        <div>
+            4
+        </div>
+        <div>
+            5
+        </div>
+        <div>
+            6
+        </div>
+        <div>
+            7
+        </div>
+        <!-- <div>8</div>
+        <div>9</div>
+        <div>10</div> -->
+    </div>
+
+    <hr>
+    <div>
+        122
+    </div>
+    <hr>
+
+    <div class="ar">
+        <div class="header"> Header </div>
+        <div class="content"> Content</div>
+        <div class="sidebar"> Sidebar </div>
+        <div class="footer"> Footer </div>
+    </div>
+
+    <hr>
+
+    <div class="lines">
+        <div class="fr">1</div>
+        <div  class="th">2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+</html>

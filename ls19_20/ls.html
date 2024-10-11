@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./dd.css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        .kub {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            transition: 1000ms;
+        }
+
+        .kub:hover {
+            /* transition: 1s; */
+
+            /* margin-top: 100px;
+            width: 200px;
+            height: 200px; */
+
+            /* transform: scale(2);
+            transform: translate(50px, 300px);
+            transform: rotate(45deg); */
+
+            /* transform: scale(1.5) translate(50px, 100px) rotate(45deg); */
+            /* transform: matrix(1, 2, 3, 4, 5, 6); */
+
+
+            background-color: black;
+        }
+
+        .kub:active {
+            background-color: red;
+        }
+
+        img {
+            transition: 2s;
+            /* filter: blur(8px); */
+        }
+
+        img:hover {
+            /* filter: blur(0); */
+            /* filter: grayscale(2); */
+            /* filter: opacity(0); */
+            /* filter: brightness(1); */
+            /* filter: brightness(.4); */
+            filter: drop-shadow(5px 5px);
+        }
+
+        /* .cat:hover {
+            filter: drop-shadow(25px 25px);
+        } */
+
+        .text {
+            animation: 8s myFirstAn infinite;
+        }
+
+        /* .text:hover {
+            animation: 3s myFirstAn;
+        } */
+
+
+        @keyframes myFirstAn {
+            /* from {
+                color: red;
+                background-color: blue;
+            }
+            to {
+                color: wheat;
+                background-color: black;
+                transform: translate(0, 400px);
+            } */
+
+
+            0% {
+                background-color: silver;
+            }
+
+            15% {
+                transform: rotate(20deg);
+            }
+
+            25% {
+                background-color: cadetblue;
+                color: red;
+                transform: rotate(50deg);
+            }
+
+            75% {
+                transform: rotate(120deg);
+                color: white;
+                background-color: black;
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+
+    <div class="kub">
+
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quibusdam,
+         tempore voluptatibus mollitia ab, quisquam fugiat eius expedita at a quod molestiae officiis,
+          sequi asperiores aut quo minus dolore voluptates.
+    </p>
+
+
+    <hr>
+
+    <img src="../ls5_6/15-156766_small-cute-cat-png.png" alt="">
+
+    <!-- <img width="500" src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-mediumSquareAt3X-v2.jpg" alt="" class="cat"> -->
+
+    <hr>
+
+    <p class="text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis aliquid velit dolorum ad nostrum. 
+        Mollitia esse in eveniet eligendi nulla nam molestias, magnam odio natus quasi! Est doloremque suscipit quos.
+    </p>
+
+    <h2>dsgps</h2>
+</body>
+</html>
